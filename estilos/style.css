@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #29241D;
+    --cor2: #824807;
+    --cor3: #AE720C;
+    --cor4: #E2AF1D;
+    --cor5: #EBEBE6;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+html, body{
+    width: auto;
+    height: 100vh;
+
+    background-color: var(--cor4);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+main{
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 270px;
+    height: 500px;
+
+    border-radius: 20px;
+    background-color: var(--cor5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.573);
+
+    overflow: hidden;
+
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    -moz-transition-timing-function: ease;
+}
+
+div#container-imagem{
+    position: relative;
+
+    /*Criando bloco com imagem de fundo*/
+    display: block;
+
+    background: #AE720C url(../imagens/sollogin.png) center center no-repeat;
+    background-size: cover;
+
+    height: 210px;
+}
+
+h1{
+    position: absolute;
+
+    width: 100%;
+    padding: 15px;
+
+    top: 50%;
+    left: 50%;  
+
+    text-align: center;
+
+    color: white;
+    font-size: 1.6em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.762);
+
+    transform: translate(-50%, -50%);
+}
+
+div#container-forms{
+    display: block;
+
+    width: 100%;
+    padding: 15px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.468);
+}
+
+div.campos{
+    display: flex; /*Inputs lado a lado*/
+    align-items: center;
+
+    height: 45px;
+    max-width: 10px 0px;
+
+    margin: 10px;
+
+    border-radius: 8px;
+    background-color: var(--cor1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.251);
+}
+
+.campos > input{
+    flex: 1; /*Input ocupa todo o resto do espaço que o sapan deixou*/
+
+    min-width: 0; /*Pra que não estoure a div pai*/
+    height: 100%;
+
+    padding: 0px 10px;
+
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    outline: none; /*Remove a borda ao clicar*/
+
+    background-color: var(--cor5);
+
+    font-size: 1em;
+}
+
+span{
+    padding: 0px 10px;
+
+    font-size: 1.5em;
+    color: var(--cor5);
+}
+
+label{
+    display: none;
+}
+
+input#input-entrar[type="submit"]{
+    display: block;
+
+    width: 100%;
+    height: 35px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    color: var(--cor5);
+    font-weight: bold;
+    font-size: 1em;
+
+    background-color: #824807;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.251);
+
+    cursor: pointer;
+}
+
+input#input-entrar[type="submit"]:hover{
+    color: var(--cor1);
+    background-color: var(--cor3);
+}
+
+a#esqueci-senha{
+    display: block;
+
+    width: 100%;
+    height: 35px;
+
+    margin-top: 10px;
+    padding-top: 2px;
+
+    border: 2px solid var(--cor3);
+    border-radius: 5px;
+
+    line-height: 25px;
+
+    text-align: center;
+    color: #29241D;
+    font-size: 1em;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.251);
+}
+
+a#esqueci-senha:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+

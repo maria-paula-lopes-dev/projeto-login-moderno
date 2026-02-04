@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #29241D;
+    --cor2: #824807;
+    --cor3: #AE720C;
+    --cor4: #E2AF1D;
+    --cor5: #EBEBE6;
+}
+
+@media screen and (min-width: 768px){
+    html, body{
+        background-image: linear-gradient(
+            to top,
+            var(--cor1),
+            var(--cor2),
+            var(--cor3)
+        );
+        background-attachment: fixed;
+    }
+
+    section#login{
+        display: flex;
+        flex-direction: row;
+
+        width: 700px;
+        height: 300px;
+    }
+
+    div#container-imagem{
+        width: 50%; /*do card PAI*/
+        height: 100%; /*toda altura do card PAI*/
+    }
+
+    input#entrar{
+        height: 40%;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    section#login{
+        display: flex;
+        flex-direction: row-reverse;
+
+        width: 950px;
+        height: 330px;
+    }
+
+    div#container-imagem{
+        width: 50%; /*do card PAI*/
+        height: 100%; /*toda altura do card PAI*/
+
+        background-position: bottom center;
+    }
+}

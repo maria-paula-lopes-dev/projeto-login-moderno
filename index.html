@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <main>
+        <!--SECTION-->
+        <section id="login">
+            <!--DIV = 'IMAGEM'-->
+            <div id="container-imagem">
+                <img src="" alt="">
+                <h1>Hello, Welcome Back!</h1>
+            </div>
+            <!--DIV FIM-->
+
+            <!--DIV = FORMS-->
+            <div id="container-forms">
+                <h2>Login</h2>
+
+                <!--FORMS-->
+                <form action="login.php" method="post" autocomplete="on">
+                    <!--DIV = CAMPOS-->
+                    <div class="campos">
+                        <input type="email" name="email" id="idEmail" required autocomplete="email" minlength="10" maxlength="30" placeholder="Username" autofocus>
+
+                        <span class="material-symbols-outlined">account_circle</span>
+
+                        <label for="idEmail">E-mail</label>
+                    </div>
+                    <!--DIV-->
+
+                    <!--DIV = CAMPOS-->
+                    <div class="campos">
+                        <input type="password" name="senha" id="idSenha" required autocomplete="current-password" minlength="8" maxlength="20" placeholder="Password">
+
+                        <span class="material-symbols-outlined">key</span>
+
+                        <label for="idSenha">Password</label>
+                    </div>
+                    <!--DIV-->
+
+                    <input type="submit" value="Entrar" id="input-entrar">
+
+                    <a href="#" id="esqueci-senha">Esqueci a Senha</a>
+                </form>
+                <!--FORMS FIM-->
+            </div>
+            <!--DIV FIM-->
+        </section>
+        <!--SECTION FIM-->
+    </main>
+</body>
+</html>
