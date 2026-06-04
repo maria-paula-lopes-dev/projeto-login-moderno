@@ -1,3 +1,5 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=b500ff&height=120&section=header"/>
+
 # ✦ Projeto Login Moderno
 
 Projeto de estudo desenvolvido com **HTML5 e CSS3**, focado na criação de um **layout moderno e totalmente responsivo**, adaptado para diferentes tamanhos de tela por meio de **media queries**.
@@ -72,3 +74,5 @@ https://www.linkedin.com/in/maria-paula-lopes/
 
 ⌁ Email:  
 mariapaulalopessilva5@gmail.com
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=b500ff&height=120&section=footer"/>
